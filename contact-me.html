@@ -3,22 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Me</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <h1>Az elérhetőségeim</h1>
-    <p>Cím: 6782 Mórahalom, István király út 2A 1.em. 6.a.</p>
-    <a href="tel:+36307408950">Mobil: 30 740 8950</a><br>
-    <a href="mailto:svetislav.kondic@gmail.com">Email: svetislav.kondic@gmail.com</a>
-    <br>
-    <br>
+    <h1>Elérhetőségeim</h1><br>
     <hr>
-    <form action="mailto:svetislav.kondic@gmail.com" method="post" enctype="text/plain">
+    <table cellspacing="10">
+        <thead>
+            <tr>
+                <th>Munkahelyi</th>
+                <th>Személyes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cím: 6782 Mórahalom, Röszkei út 34</td>
+                <td>Cím: 6782 Mórahalom, István király út 2A 1.em. 6.a</td>
+            </tr>
+            <tr>
+                <td>Mobil:<a href="tel:+36307408950">+36 30 740 8950</a></td>
+                <td>Mobil:<a href="tel:+36307408950">+36 30 740 8950</a></td>
+            </tr>
+            <tr>
+                <td>Email:<a href="mailto:kondic@morahalom.hu">kondic@morahalom.hu</a></td>
+                <td>Email:<a href="mailto:svetislav.kondic@gmail.com">svetislav.kondic@gmail.com</a></td>
+            </tr>
+        </tbody>
+    </table>
         <br>
-        <label>Your Name:</label>
+        <hr>
+        <form action="mailto:svetislav.kondic@gmail.com" method="post" enctype="text/plain">
+        <br>
+        <label>Neved:</label>
         <input type="text" name="yourName"><br>
-        <label>Your Email:</label>
+        <label>Email címed:</label>
         <input type="email" name="yourEmail"><br>
-        <label>Your Message:</label><br>
+        <label>Üzeneted:</label><br>
         <textarea name="yourMessage" cols="30" rows="10"></textarea><br>
         <input type="submit">
 
